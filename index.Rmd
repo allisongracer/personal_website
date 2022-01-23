@@ -8,9 +8,9 @@ links:
     url: "https://github.com/allisongracer"
   - label: Email
     url: "allisongracer@bren.ucsb.edu"
+site: distill::distill_website 
 output:
   postcards::trestles
-site: distill::distill_website  
 ---
  
 I graduated with honors from the University of California Santa Barbara in 2013 with a Bachelor of Arts in Environmental Studies and Anthropology with minors in Spatial Science and Native American and Indigenous Studies. I came to Bren to study Corporate Environmental Management with a focus in communication. I hope to use the tools I acquire at Bren to enable corporations to identify solutions that improve operating efficiencies that are both environmentally and economically advantageous.
