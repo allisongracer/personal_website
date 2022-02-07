@@ -1,74 +1,11 @@
 ---
-title: "About me"
+title: "About"
 description: |
-  Education & Research Experience
+  My personal website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-
-## Education
-
-**Master of Environmental Science & Management** Bren School of Environmental Science & Management (Expected June 2023) 
-
-- Corporate Environmental Management Specialization
-
-- Energy & Climate Specialization
-
-
-**B.A. with Honors in Environmental Studies & Anthropology** University of California, Santa Barbara (June 2013)
-
-- Spatial Science Minor
-
-- American Indian and Indigenous Studies Minor
-
-- Senior Honors Thesis: Paleoethnobotanical Analysis of Farming and Food Systems in Central Illinois
-
-
-## Research Experience
-
-**Senior Honors Research Program:** Dr. Amber VanDerwarker, Anthropology UCSB 6/12-12/13
-
-- Explored the impacts of chronic warfare on maize production in the ancient Central Illinois River Valley
-
-- Assessed the numbers and types of maize varieties using paleoethnobotanical remains
-
-
-**Forest Garden Research Assistant:** Dr. Anabel Ford, Director of MesoAmerican Research Center 3/12-6/12	
-
-- Analyzed sustainable food production practices implemented in Central America
-
-- Collected and review relevant material & create summarized reports of findings
-
-
-**Agricultural Food System Research Assistant:** Dr. David Cleveland, Environmental Studies UCSB 12/10-6/12 
-
-- Examined synergistic potentials for food system across numerous sources 
-
-- Interviewed farmers and policy advocates throughout Santa Barbara County
-
-
-**Wildlands Studies Field School:** Belize – Ecosystems & Cultures 6/11-8/11
-
-- Assessed the effectiveness of long-range sustainability of resource management strategies in Belize’s natural areas
-
-- Conducted ecological research and monitoring across Belize’s key terrestrial and coastal ecosystems
-
-
-**Greenhouse Intern:** Goleta Valley Beautiful 12/10-6/11			
-
-- Developed on-site composting, trained employees, and created a manual
-
-- Composed reports, develop and conduct workshops and science night outreach at elementary schools
-
-
-**Floral Reproductive Ecology Lab Research Assistant:** Leah Dudley & Susan Mazer, Faculty UCSB 10/09-3/10
-
-- Methodical record keeping of plant traits, data collection, data entry, and statistical analysis
-
-- Plant care including self-pollination, cross pollination, planting
-
 
 
