@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "path": "about_me.html",
+      "title": "About me",
+      "description": "Education & Research Experience",
+      "author": [],
+      "contents": "\nEducation\nMaster of Environmental Science & Management Bren School of Environmental Science & Management (Expected June 2023)\nCorporate Environmental Management Specialization\nEnergy & Climate Specialization\nB.A. with Honors in Environmental Studies & Anthropology University of California, Santa Barbara (June 2013)\nSpatial Science Minor\nAmerican Indian and Indigenous Studies Minor\nSenior Honors Thesis: Paleoethnobotanical Analysis of Farming and Food Systems in Central Illinois\nResearch Experience\nSenior Honors Research Program: Dr. Amber VanDerwarker, Anthropology UCSB 6/12-12/13\nExplored the impacts of chronic warfare on maize production in the ancient Central Illinois River Valley\nAssessed the numbers and types of maize varieties using paleoethnobotanical remains\nForest Garden Research Assistant: Dr. Anabel Ford, Director of MesoAmerican Research Center 3/12-6/12\nAnalyzed sustainable food production practices implemented in Central America\nCollected and review relevant material & create summarized reports of findings\nAgricultural Food System Research Assistant: Dr. David Cleveland, Environmental Studies UCSB 12/10-6/12\nExamined synergistic potentials for food system across numerous sources\nInterviewed farmers and policy advocates throughout Santa Barbara County\nWildlands Studies Field School: Belize – Ecosystems & Cultures 6/11-8/11\nAssessed the effectiveness of long-range sustainability of resource management strategies in Belize’s natural areas\nConducted ecological research and monitoring across Belize’s key terrestrial and coastal ecosystems\nGreenhouse Intern: Goleta Valley Beautiful 12/10-6/11\nDeveloped on-site composting, trained employees, and created a manual\nComposed reports, develop and conduct workshops and science night outreach at elementary schools\nFloral Reproductive Ecology Lab Research Assistant: Leah Dudley & Susan Mazer, Faculty UCSB 10/09-3/10\nMethodical record keeping of plant traits, data collection, data entry, and statistical analysis\nPlant care including self-pollination, cross pollination, planting\n\n\n\n",
+      "last_modified": "2022-02-06T23:18:20-08:00"
+    },
+    {
       "path": "about.html",
       "title": "About me",
       "description": "Education & Research Experience",
