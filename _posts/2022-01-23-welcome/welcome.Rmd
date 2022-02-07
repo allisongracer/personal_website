@@ -1,7 +1,8 @@
 ---
-title: "welcome"
+title: "Mono Lake Water Levels"
 description: |
-  A short description of the post.
+  A visual history
+image: "Mono Lake.png"
 author:
   - name: Allison Gracer
 date: 2022-01-23
@@ -15,8 +16,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+**Figure 1:** This figure depicts the recent history of Mono Lake water levels from 1850-2017. In 1941 the Los Angeles Department of Water & Power (DWP) began diverting water to supply the growing demand of water for Los Angeles. This diversion of water had profound effects on Mono Lake water and salinity levels, and resulted in a number of ecological impacts. Around 1976 the lake levels dropped to 6,377 feet, land bridges emerged allowing predators access to islands that had previously been safe nesting grounds for California Gulls. In 1983 the California Supreme Court sided with the Mono Lake Committee (est. 1979) ruling that the state of California had an obligation to protect Mono Lake, even if that meant finding other sources of water for Los Angeles. A study published in 1987 by the Mono Basin Ecosystem Study Committee determined a decrease in bird food sources would occur at lake levels of 6,360 feet. Data: Mono Basin Clearinghouse
+
+
+
 
 
