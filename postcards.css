@@ -43,8 +43,8 @@ d-byline {
 
 /*-- ARTICLE TABLE OF CONTENTS --*/
 .d-contents {
-  --heading-size:    18px;
-  --contents-size:   13px;
+  --heading-size:    20px;
+  --contents-size:   15px;
 }
 
 /*-- ARTICLE APPENDIX --*/
@@ -62,14 +62,14 @@ d-appendix {
   --title-size:       18px;
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
-  --hover-color:      white;
-  --bkgd-color:       #0F2E3D;
+  --hover-color:      #a65b07;
+  --bkgd-color:       #206f78;
 }
 
 .distill-site-footer {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
-  --hover-color:      white;
+  --hover-color:      #a65b07;
   --bkgd-color:       #0F2E3D;
 }
 
