@@ -4,8 +4,8 @@ description: |
   A visual history
 image: "Mono Lake.png"
 author:
-  - name: Allison Gracer
-date: 2022-01-23
+  - name:
+date:
 output:
   distill::distill_article:
     self_contained: false

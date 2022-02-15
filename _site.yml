@@ -7,9 +7,7 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Blog"
+    - text: "Portfolio"
       href: blog.html
     - text: "About Me"
       href: about_me.html
