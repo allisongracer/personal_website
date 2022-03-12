@@ -13,4 +13,4 @@ output:
   postcards::trestles
 ---
  
-I am a masters student at the Bren School of Environmental Science and Management specializing in Corporate Environmental Management as well as Energy and Climate. I am passionate about sustainable energy and hope to use the tools I learn at Bren to help companies reach zero-emissions goals while maintaining economically viable business operations. In my personal time, I like to surf and boulder outdoors, always with my pup <a href="Kaya.JPG" target = '_blank'>Kaya</a> by my side.  
+I am a masters student at the Bren School of Environmental Science and Management at the University of California, Santa Barbara. My specializations are in Energy and Climate as well as Corporate Environmental Management. I am passionate about sustainable energy and hope to use the tools I learn at Bren to help companies reach zero-emissions goals while maintaining economically viable business operations. In my personal time, I like to surf and boulder outdoors, always with my pup <a href="Kaya.JPG" target = '_blank'>Kaya</a> by my side.  

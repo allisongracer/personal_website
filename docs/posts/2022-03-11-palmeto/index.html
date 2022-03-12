@@ -87,9 +87,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>Allison Gracer: Mono Lake Water Levels</title>
+<title>Allison Gracer: Binary Logistic Regression on Palmetto Species</title>
 
-<meta property="description" itemprop="description" content="A visual history"/>
 
 
 <!--  https://schema.org/Article -->
@@ -98,27 +97,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="article:author" content="Allison Gracer"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Allison Gracer: Mono Lake Water Levels"/>
+<meta property="og:title" content="Allison Gracer: Binary Logistic Regression on Palmetto Species"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="A visual history"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Allison Gracer"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Allison Gracer: Mono Lake Water Levels"/>
-<meta property="twitter:description" content="A visual history"/>
+<meta property="twitter:title" content="Allison Gracer: Binary Logistic Regression on Palmetto Species"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","image","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Mono Lake Water Levels"]},{"type":"character","attributes":{},"value":["A visual history"]},{"type":"character","attributes":{},"value":["Mono Lake.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Allison Gracer"]}]}]},{"type":"character","attributes":{},"value":["03-11-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["hide"]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Binary Logistic Regression on Palmetto Species"]},{"type":"NULL"},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Allison Gracer"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["2022-03-11"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["hide"]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["Mono Lake.png","welcome files/anchor-4.2.2/anchor.min.js","welcome files/bowser-1.9.3/bowser.min.js","welcome files/distill-2.2.21/template.v2.js","welcome files/header-attrs-2.11/header-attrs.js","welcome files/jquery-3.6.0/jquery-3.6.0.js","welcome files/jquery-3.6.0/jquery-3.6.0.min.js","welcome files/jquery-3.6.0/jquery-3.6.0.min.map","welcome files/popper-2.6.0/popper.min.js","welcome files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome files/tippy-6.2.7/tippy-light-border.css","welcome files/tippy-6.2.7/tippy.css","welcome files/tippy-6.2.7/tippy.umd.min.js","welcome files/webcomponents-2.0.0/webcomponents.js","welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/figure-html5/unnamed-chunk-2-1.png","welcome_files/header-attrs-2.11/header-attrs.js","welcome_files/jquery-3.6.0/jquery-3.6.0.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.map","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["palmeto_files/figure-html5/unnamed-chunk-6-1.png","palmeto_files/figure-html5/unnamed-chunk-6-2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2356,6 +2353,8 @@ d-appendix d-footnote-list a.footnote-backlink {
 }</style>
 <!--/radix_placeholder_distill-->
   <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2376,7 +2375,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Mono Lake Water Levels","description":"A visual history","authors":[{"author":"Allison Gracer","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-03-11T00:00:00.000-08:00","citationText":"Gracer, 2022"}
+{"title":"Binary Logistic Regression on Palmetto Species","authors":[{"author":"Allison Gracer","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-03-11T00:00:00.000-08:00","citationText":"Gracer, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2400,16 +2399,16 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Mono Lake Water Levels</h1>
+<h1>Binary Logistic Regression on Palmetto Species</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A visual history</p></p>
+
 </div>
 
 <div class="d-byline">
-  Allison Gracer  
+  Allison Gracer true 
   
-<br/>03-11-2022
+<br/>2022-03-11
 </div>
 
 <div class="d-article">
@@ -2419,10 +2418,35 @@ d-appendix d-footnote-list a.footnote-backlink {
 hide
 </summary>
 <div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='va'><a href='https://rdrr.io/pkg/knitr/man/opts_chunk.html'>opts_chunk</a></span><span class='op'>$</span><span class='fu'>set</span><span class='op'>(</span>echo <span class='op'>=</span> <span class='cn'>TRUE</span>, message <span class='op'>=</span> <span class='cn'>FALSE</span>, warning <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+
+<span class='co'># attach packages</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://here.r-lib.org/'>here</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggobi.github.io/ggally/'>GGally</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://patchwork.data-imaginist.com'>patchwork</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>AICcmodavg</span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/topepo/caret/'>caret</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://broom.tidymodels.org/'>broom</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://haozhu233.github.io/kableExtra/'>kableExtra</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/sfirke/janitor'>janitor</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<h2 id="overview">Overview</h2>
+<p>This report uses binary logistic regression to determine the predictive capacity of the variables plant height (cm), canopy length(cm), canopy width (cm), and number of green leaves to determine whether a palmetto is species Serenoa repens or Sabal etonia. The data set contains survival and growth data across multiple years, habitats and experimental treatments of two dominant palmetto species, Serenoa repens and Sabal etonia, at Archbold Biological Station in south-central Florida from 1981 - 2017, ongoing at 5-year intervals.</p>
+<p><strong>Data Citation:</strong> Abrahamson, W.G. 2019. Survival, growth and biomass estimates of two dominant palmetto species of south-central Florida from 1981 - 2017, ongoing at 5-year intervals ver 1. Environmental Data Initiative. <a href="https://doi.org/10.6073/pasta/f2f96ec76fbbd4b9db431c79a770c4d5" class="uri">https://doi.org/10.6073/pasta/f2f96ec76fbbd4b9db431c79a770c4d5</a></p>
+<h2 id="data-wrangling-visualization">Data wrangling &amp; visualization</h2>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># read in the data</span>
-<span class='va'>mono_lake</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"data"</span>, <span class='st'>"mono_lake_annual_levels.csv"</span><span class='op'>)</span>,
-                           skip <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span> <span class='op'><a href='https://rdrr.io/pkg/janitor/man/pipe.html'>%&gt;%</a></span> 
-  <span class='fu'><a href='https://rdrr.io/pkg/janitor/man/clean_names.html'>clean_names</a></span><span class='op'>(</span><span class='op'>)</span>
+
+<span class='va'>palmetto</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"data"</span>, <span class='st'>"palmetto.csv"</span><span class='op'>)</span><span class='op'>)</span>
 </code></pre>
 </div>
 </details>
@@ -2433,86 +2457,463 @@ hide
 hide
 </summary>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># visualize the data</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>mono_lake</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>year</span>, y <span class='op'>=</span> <span class='va'>lake_level_feet_above_sea_level</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># create ggplot</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"cadetblue4"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># specify plot type, and customize line color</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_ribbon.html'>geom_ribbon</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>ymin <span class='op'>=</span> <span class='fl'>6350</span>, <span class='co'># create fill for the water levels, set min</span>
-                  ymax <span class='op'>=</span> <span class='va'>lake_level_feet_above_sea_level</span><span class='op'>)</span>, <span class='co'>#set fill max</span>
-              fill <span class='op'>=</span> <span class='st'>"lightcyan2"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># customize fill color</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x<span class='op'>=</span> <span class='st'>"\nYear\n"</span>, <span class='co'># label x-axis</span>
-       y <span class='op'>=</span> <span class='st'>"\nLake level\n(Feet above sea level)\n"</span>, <span class='co'># label y-axis</span>
-       title <span class='op'>=</span> <span class='st'>"Mono Lake Levels 1850-2017"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># create a title</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_bw</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># customize theme</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>hjust <span class='op'>=</span> <span class='fl'>0.5</span>, <span class='co'># center the tile</span>
-                                  size <span class='op'>=</span> <span class='fl'>14</span>, <span class='co'># change title font size</span>
-                                  face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># change title font to bold</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>plot.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"burlywood"</span><span class='op'>)</span>, <span class='co'># change plot background color</span>
-        panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"ivory1"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'>#change panel background color</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>plot.margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>10</span>, <span class='co'># top margin</span>
-                             r <span class='op'>=</span> <span class='fl'>30</span>, <span class='co'># right margin</span>
-                             b <span class='op'>=</span> <span class='fl'>5</span>, <span class='co'># bottom margin</span>
-                             l <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># left margin</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.major <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-        panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>limit <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1850</span>,<span class='fl'>2017</span><span class='op'>)</span>, <span class='co'># set limits of x-axis</span>
-                     breaks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1850</span>, <span class='fl'>1875</span>, <span class='fl'>1900</span>, <span class='fl'>1925</span>, <span class='fl'>1950</span>, <span class='fl'>1975</span>, <span class='fl'>2000</span>, <span class='fl'>2017</span><span class='op'>)</span>, <span class='co'># specify breaks</span>
-                     expand <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># adjust axis margins</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_continuous</a></span><span class='op'>(</span>limit <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>6350</span>, <span class='fl'>6435</span><span class='op'>)</span>, <span class='co'># set limits of y-axis</span>
-                     breaks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>6350</span>, <span class='fl'>6370</span>, <span class='fl'>6390</span>, <span class='fl'>6410</span>, <span class='fl'>6430</span><span class='op'>)</span>,  <span class='co'># specify breaks</span>
-                     expand <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># adjust axis margins</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='fl'>6377</span><span class='op'>)</span>, <span class='co'># add another line to the graph to indicate important water levels</span>
-            color <span class='op'>=</span> <span class='st'>"sienna4"</span>, <span class='co'># customize line color</span>
-            linetype <span class='op'>=</span> <span class='st'>"dotted"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># customize line type</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='fl'>6360</span><span class='op'>)</span>, <span class='co'># add another line to the graph to indicate important water levels</span>
-            color <span class='op'>=</span> <span class='st'>"sienna4"</span>, <span class='co'># customize line color</span>
-            linetype <span class='op'>=</span> <span class='st'>"dotted"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># customize line type</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/annotate.html'>annotate</a></span><span class='op'>(</span><span class='st'>"text"</span>, <span class='co'># add text labels, indicate location, color, and size</span>
-           label <span class='op'>=</span> <span class='st'>"6,377 feet - land bridges emerge"</span>,
-           x <span class='op'>=</span> <span class='fl'>1875</span>, <span class='co'># label position on x-axis</span>
-           y <span class='op'>=</span> <span class='fl'>6380</span>, <span class='co'># label position on y-axis</span>
-           color <span class='op'>=</span><span class='st'>"sienna4"</span>, <span class='co'>#label font color</span>
-           size <span class='op'>=</span> <span class='fl'>2.75</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># label font size</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/annotate.html'>annotate</a></span><span class='op'>(</span><span class='st'>"text"</span>, <span class='co'># add text labels, indicate location, color, and size</span>
-           label <span class='op'>=</span> <span class='st'>"6360 feet - birds food sources decline"</span>, <span class='co'># label title</span>
-           x <span class='op'>=</span> <span class='fl'>1879</span>, <span class='co'># label position on x-axis</span>
-           y <span class='op'>=</span> <span class='fl'>6363</span>, <span class='co'># label position on y-axis</span>
-           color <span class='op'>=</span> <span class='st'>"sienna4"</span>, <span class='co'># label font color</span>
-           size <span class='op'>=</span> <span class='fl'>2.75</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># label font size</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_segment.html'>geom_segment</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fl'>1941</span>, <span class='co'># add an arrow to indicate 1941 water diversion to LA</span>
-                   xend <span class='op'>=</span> <span class='fl'>1941</span>,
-                   y <span class='op'>=</span> <span class='fl'>6420</span>,
-                   yend <span class='op'>=</span> <span class='fl'>6429</span><span class='op'>)</span>,
-               color <span class='op'>=</span> <span class='st'>"sienna4"</span>,
-               arrow <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/arrow.html'>arrow</a></span><span class='op'>(</span>ends <span class='op'>=</span> <span class='st'>"first"</span>, <span class='co'># set the arrow facing down</span>
-                             type <span class='op'>=</span> <span class='st'>"open"</span>, <span class='co'># set arrow point to open (not filled in)</span>
-                             length <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>.3</span>, <span class='st'>"cm"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># set arrow point length</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/annotate.html'>annotate</a></span><span class='op'>(</span><span class='st'>"text"</span>, <span class='co'># add text labels, indicate location, color, and size</span>
-           label <span class='op'>=</span> <span class='st'>"1941 - water diversion to LA begins"</span>,
-           x <span class='op'>=</span> <span class='fl'>1941</span>, <span class='co'># label position on x-axis</span>
-           y <span class='op'>=</span> <span class='fl'>6432</span>, <span class='co'># label position on y-axis</span>
-           color <span class='op'>=</span> <span class='st'>"sienna4"</span>, <span class='co'># label font color</span>
-           size <span class='op'>=</span> <span class='fl'>2.75</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># label font size</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_segment.html'>geom_segment</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fl'>1983</span>, <span class='co'># add an arrow to indicate 1983 CA Supreme Court ruling</span>
-                   xend <span class='op'>=</span> <span class='fl'>1983</span>, <span class='co'># x-axis end point</span>
-                   y <span class='op'>=</span> <span class='fl'>6381</span>, <span class='co'># y-axis start point</span>
-                   yend <span class='op'>=</span> <span class='fl'>6390</span><span class='op'>)</span>, <span class='co'># y-axis line end point</span>
-               color <span class='op'>=</span> <span class='st'>"sienna4"</span>, <span class='co'># arrow color</span>
-               arrow <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/arrow.html'>arrow</a></span><span class='op'>(</span>ends <span class='op'>=</span> <span class='st'>"first"</span>, <span class='co'># set the arrow facing down</span>
-                             type <span class='op'>=</span> <span class='st'>"open"</span>, <span class='co'># set arrow point to open (not filled in)</span>
-                             length <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>.3</span>, <span class='st'>"cm"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>  <span class='co'># set arrow point length</span>
-    <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/annotate.html'>annotate</a></span><span class='op'>(</span><span class='st'>"text"</span>, <span class='co'># add text labels, indicate location, color, and size</span>
-           label <span class='op'>=</span> <span class='st'>"1983 - CA Supreme Court protection"</span>,
-           x <span class='op'>=</span> <span class='fl'>1990</span>, <span class='co'># label position on x-axis</span>
-           y <span class='op'>=</span> <span class='fl'>6393</span>, <span class='co'># label position on y-axis</span>
-           color <span class='op'>=</span> <span class='st'>"sienna4"</span>, <span class='co'># label font color</span>
-           size <span class='op'>=</span> <span class='fl'>2.75</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># First I clean up the data by selecting only the columns that I am interested in, applying species scientific names to the data rather than numbers, and dropping NA values. Finally I convert species names to factors for later use in binary logistic regression.</span>
+
+<span class='va'>palmetto_clean</span> <span class='op'>&lt;-</span> <span class='va'>palmetto</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>year</span>, <span class='va'>species</span>, <span class='va'>height</span>, <span class='va'>length</span>, <span class='va'>width</span>, <span class='va'>green_lvs</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>species_name <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span> <span class='op'>(</span><span class='va'>species</span> <span class='op'>==</span> <span class='st'>"1"</span> <span class='op'>~</span> <span class='st'>"Serenoa repens"</span>,
+                              <span class='va'>species</span> <span class='op'>==</span> <span class='st'>"2"</span> <span class='op'>~</span> <span class='st'>"Sabal etonia"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://tidyr.tidyverse.org/reference/drop_na.html'>drop_na</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>species_name <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>as.factor</a></span><span class='op'>(</span><span class='va'>species_name</span><span class='op'>)</span><span class='op'>)</span>
 </code></pre>
 </div>
 </details>
-<p><img src="welcome_files/figure-html5/unnamed-chunk-2-1.png" width="624" style="display: block; margin: auto;" /></p>
 </div>
-<p><strong>Figure 1:</strong> This figure depicts the recent history of Mono Lake water levels from 1850-2017. In 1941 the Los Angeles Department of Water &amp; Power (DWP) began diverting water to supply the growing demand of water for Los Angeles. This diversion of water had profound effects on Mono Lake water and salinity levels, and resulted in a number of ecological impacts. Around 1976 the lake levels dropped to 6,377 feet, land bridges emerged allowing predators access to islands that had previously been safe nesting grounds for California Gulls. In 1983 the California Supreme Court sided with the Mono Lake Committee (est. 1979) ruling that the state of California had an obligation to protect Mono Lake, even if that meant finding other sources of water for Los Angeles. A study published in 1987 by the Mono Basin Ecosystem Study Committee determined a decrease in bird food sources would occur at lake levels of 6,360 feet.</p>
-<p><strong>Data Citation:</strong> Mono Basin Clearinghouse</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Initial exploration of variables using ggpairs to assess predictor variables</span>
+
+<span class='va'>palmetto_clean</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>species_name</span>, <span class='va'>height</span><span class='op'>:</span><span class='va'>green_lvs</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://ggobi.github.io/ggally/reference/ggpairs.html'>ggpairs</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>species_name</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Create a summary of means for analysis and in-line coding</span>
+
+<span class='va'>palmetto_summary</span> <span class='op'>&lt;-</span> <span class='va'>palmetto_clean</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>species_name</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarize</a></span><span class='op'>(</span>count <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/context.html'>n</a></span><span class='op'>(</span><span class='op'>)</span>,
+            mean_height <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>height</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>, <span class='fl'>2</span><span class='op'>)</span>,
+            mean_length <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>length</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>, <span class='fl'>2</span><span class='op'>)</span>,
+            mean_width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>width</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>, <span class='fl'>2</span><span class='op'>)</span>,
+            mean_green_lvs <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>green_lvs</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>, <span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># create three finalized data visualizations that explore differences between the two species, Serenoa repens and Sabal etonia with the following variables of interest: height (cm), canopy length (cm), canopy width (cm), and number of green leaves. </span>
+
+
+<span class='co'># Plot 1</span>
+
+<span class='va'>p1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>palmetto_clean</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>species_name</span>, y <span class='op'>=</span> <span class='va'>height</span>, fill <span class='op'>=</span> <span class='va'>species_name</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_violin.html'>geom_violin</a></span><span class='op'>(</span>scale <span class='op'>=</span> <span class='st'>"count"</span>, color <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"black"</span>, fill <span class='op'>=</span> <span class='cn'>NA</span>, width <span class='op'>=</span> <span class='fl'>0.2</span>, outlier.color <span class='op'>=</span> <span class='cn'>NA</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/stat_summary.html'>stat_summary</a></span><span class='op'>(</span>fun <span class='op'>=</span> <span class='va'>mean</span>, 
+               geom <span class='op'>=</span> <span class='st'>"point"</span>, 
+               shape <span class='op'>=</span> <span class='fl'>20</span>, 
+               size <span class='op'>=</span> <span class='fl'>4</span>, 
+               color <span class='op'>=</span> <span class='st'>"black"</span>, 
+               fill <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_fill_manual</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"seagreen"</span>, <span class='st'>"olivedrab3"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> 
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.position <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, y <span class='op'>=</span> <span class='st'>"\nHeight (cm)\n"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_discrete.html'>scale_x_discrete</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_wrap.html'>str_wrap</a></span><span class='op'>(</span><span class='va'>x</span>, width <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>ggtitle</a></span><span class='op'>(</span><span class='st'>"A"</span><span class='op'>)</span>
+
+
+<span class='co'># Plot 2</span>
+
+<span class='va'>p2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>palmetto_clean</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>species_name</span>, y <span class='op'>=</span> <span class='va'>length</span>, fill <span class='op'>=</span> <span class='va'>species_name</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_violin.html'>geom_violin</a></span><span class='op'>(</span>scale <span class='op'>=</span> <span class='st'>"count"</span>, color <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"black"</span>, fill <span class='op'>=</span> <span class='cn'>NA</span>, width <span class='op'>=</span> <span class='fl'>0.2</span>, outlier.color <span class='op'>=</span> <span class='cn'>NA</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/stat_summary.html'>stat_summary</a></span><span class='op'>(</span>fun <span class='op'>=</span> <span class='va'>mean</span>, 
+               geom <span class='op'>=</span> <span class='st'>"point"</span>, 
+               shape <span class='op'>=</span> <span class='fl'>20</span>, 
+               size <span class='op'>=</span> <span class='fl'>4</span>, 
+               color <span class='op'>=</span> <span class='st'>"black"</span>, 
+               fill <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_fill_manual</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"seagreen"</span>, <span class='st'>"olivedrab3"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> 
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.position <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, y <span class='op'>=</span> <span class='st'>"\nLength (cm)\n"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_discrete.html'>scale_x_discrete</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_wrap.html'>str_wrap</a></span><span class='op'>(</span><span class='va'>x</span>, width <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>ggtitle</a></span><span class='op'>(</span><span class='st'>"A"</span><span class='op'>)</span>
+
+<span class='co'># Plot 3</span>
+
+<span class='va'>p3</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>palmetto_clean</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>species_name</span>, y <span class='op'>=</span> <span class='va'>width</span>, fill <span class='op'>=</span> <span class='va'>species_name</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_violin.html'>geom_violin</a></span><span class='op'>(</span>scale <span class='op'>=</span> <span class='st'>"count"</span>, color <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"black"</span>, fill <span class='op'>=</span> <span class='cn'>NA</span>, width <span class='op'>=</span> <span class='fl'>0.2</span>, outlier.color <span class='op'>=</span> <span class='cn'>NA</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/stat_summary.html'>stat_summary</a></span><span class='op'>(</span>fun <span class='op'>=</span> <span class='va'>mean</span>, 
+               geom <span class='op'>=</span> <span class='st'>"point"</span>, 
+               shape <span class='op'>=</span> <span class='fl'>20</span>, 
+               size <span class='op'>=</span> <span class='fl'>4</span>, 
+               color <span class='op'>=</span> <span class='st'>"black"</span>, 
+               fill <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_fill_manual</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"seagreen"</span>, <span class='st'>"olivedrab3"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> 
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.position <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, y <span class='op'>=</span> <span class='st'>"\nWidth (cm)\n"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_discrete.html'>scale_x_discrete</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_wrap.html'>str_wrap</a></span><span class='op'>(</span><span class='va'>x</span>, width <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>ggtitle</a></span><span class='op'>(</span><span class='st'>"B"</span><span class='op'>)</span>
+
+<span class='co'># Plot 4</span>
+
+<span class='va'>p4</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>palmetto_clean</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>species_name</span>, y <span class='op'>=</span> <span class='va'>green_lvs</span>, fill <span class='op'>=</span> <span class='va'>species_name</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_violin.html'>geom_violin</a></span><span class='op'>(</span>scale <span class='op'>=</span> <span class='st'>"count"</span>, color <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"black"</span>, fill <span class='op'>=</span> <span class='cn'>NA</span>, width <span class='op'>=</span> <span class='fl'>0.2</span>, outlier.color <span class='op'>=</span> <span class='cn'>NA</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/stat_summary.html'>stat_summary</a></span><span class='op'>(</span>fun <span class='op'>=</span> <span class='va'>mean</span>, 
+               geom <span class='op'>=</span> <span class='st'>"point"</span>, 
+               shape <span class='op'>=</span> <span class='fl'>20</span>, 
+               size <span class='op'>=</span> <span class='fl'>4</span>, 
+               color <span class='op'>=</span> <span class='st'>"black"</span>, 
+               fill <span class='op'>=</span> <span class='st'>"black"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_fill_manual</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"seagreen"</span>, <span class='st'>"olivedrab3"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> 
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.position <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, y <span class='op'>=</span> <span class='st'>"\nGreen Leaf Counts\n"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_discrete.html'>scale_x_discrete</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='fu'><a href='https://stringr.tidyverse.org/reference/str_wrap.html'>str_wrap</a></span><span class='op'>(</span><span class='va'>x</span>, width <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>ggtitle</a></span><span class='op'>(</span><span class='st'>"B"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># combine all three graphs with patchwork</span>
+
+<span class='va'>p2</span><span class='op'>+</span><span class='va'>p4</span>
+</code></pre>
+</div>
+</details>
+<img src="palmeto_files/figure-html5/unnamed-chunk-6-1.png" width="624" />
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>p1</span><span class='op'>+</span><span class='va'>p3</span>
+</code></pre>
+</div>
+</details>
+<p><img src="palmeto_files/figure-html5/unnamed-chunk-6-2.png" width="624" /></p>
+</div>
+<p><strong>Figure 1:</strong> These graphs explore differences in predictor variables for two palmetto species. The shapes represent the quantity of observations at a given value. Box endpoints indicate the 25<sup>th</sup> and 75<sup>th</sup> percentile values; the black line and black point within the box indicate the median and mean value for each species, respectively. Plot <strong>(A)</strong> shows length (cm) for both species. The absolute difference in mean length between the two species is 23.28 centimeters, (a 11.45 % difference). Plot <strong>(B)</strong> looks at the count of green leaves for both species. The absolute difference in mean green leaf count is 3.48, (a 36.59 % difference).</p>
+<p><strong>Figure 2:</strong> These graphs explore differences in predictor variables for two palmetto species. The shapes represent the quantity of observations at a given value. Box endpoints indicate the 25<sup>th</sup> and 75<sup>th</sup> percentile values; the black line and black point within the box indicate the median and mean value for each species, respectively. Plot <strong>(A)</strong> shows height (cm) for both species. The absolute difference in mean height between the two species is 2.1 centimeters, (a 1.53 % difference). Plot <strong>(B)</strong> shows width(cm) for both species. The absolute difference in mean width between the two species is 7.31 centimeters, (a 4.91 % difference).</p>
+<p>Based on the above analysis of all four variables, green leaf count has the most predictive capacity, followed by length, then width and height.</p>
+<h2 id="binomial-logistic-regression">Binomial logistic regression</h2>
+<p>Running binomial logistic regression(BLR) for two models to try to determine the probability of a palmetto species based on several predictor variables.</p>
+<p><strong>Model 1:</strong> Palmetto species as a function of maximum plant height, canopy length, canopy width, and number of green leaves</p>
+<p><strong>Model 2:</strong> Palmetto species as a function of maximum plant height, canopy width, and green leaves</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># checking factor levels - Sabal etonia is the first '0' factor, or reference level and Serenoa repens is second factor or '1'</span>
+<span class='fu'><a href='https://rdrr.io/r/base/levels.html'>levels</a></span><span class='op'>(</span><span class='va'>palmetto_clean</span><span class='op'>$</span><span class='va'>species_name</span><span class='op'>)</span>
+
+<span class='co'>#(a `r round((palmetto_summary$mean_length[2] - palmetto_summary$mean_length[1]/((palmetto_summary$mean_length[2]+ palmetto_summary$mean_length[1]/2)*100, 2)`) </span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># creating and storing functions</span>
+<span class='va'>f1</span> <span class='op'>&lt;-</span> <span class='va'>species_name</span> <span class='op'>~</span> <span class='va'>height</span> <span class='op'>+</span> <span class='va'>length</span> <span class='op'>+</span> <span class='va'>width</span> <span class='op'>+</span> <span class='va'>green_lvs</span>
+
+<span class='va'>f2</span> <span class='op'>&lt;-</span> <span class='va'>species_name</span> <span class='op'>~</span> <span class='va'>height</span> <span class='op'>+</span> <span class='va'>width</span> <span class='op'>+</span> <span class='va'>green_lvs</span>
+
+
+<span class='co'># creating the regressions for each model</span>
+<span class='va'>blr1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span><span class='op'>(</span>formula <span class='op'>=</span> <span class='va'>f1</span>,
+            data <span class='op'>=</span> <span class='va'>palmetto_clean</span>,
+            family <span class='op'>=</span> <span class='st'>"binomial"</span><span class='op'>)</span>
+
+<span class='va'>blr2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span><span class='op'>(</span>formula <span class='op'>=</span> <span class='va'>f2</span>,
+            data <span class='op'>=</span> <span class='va'>palmetto_clean</span>,
+            family <span class='op'>=</span> <span class='st'>"binomial"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># looking at blr results</span>
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>blr1</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>blr2</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<h2 id="model-selection">Model selection</h2>
+<h3 id="aicc">AICc</h3>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>aic_mod</span> <span class='op'>&lt;-</span> <span class='fu'>AICcmodavg</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/AICcmodavg/man/aictab.html'>aictab</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='va'>blr1</span>, <span class='va'>blr2</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<p><strong>Model 1</strong> AICc is 5194.57</p>
+<p><strong>Model 2</strong> AICc is 5987.48</p>
+<p>The <strong>difference in AIC</strong> between Model 1 and Model 2 is 792.91. Since the difference in AIC between the models is significantly large, we accept that Model 1 is a much better fit than model 2.</p>
+<h3 id="fold-cross-validation">10-fold cross validation</h3>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Use the caret package to automate a 10-fold cross-validation. Use prediction accuracy as our metric.</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>123</span><span class='op'>)</span>
+<span class='va'>tr_ctrl</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/caret/man/trainControl.html'>trainControl</a></span><span class='op'>(</span>method <span class='op'>=</span> <span class='st'>"repeatedcv"</span>, number <span class='op'>=</span> <span class='fl'>10</span>, repeats <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span>
+
+<span class='co'># Train model 1</span>
+<span class='va'>model1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/caret/man/train.html'>train</a></span><span class='op'>(</span><span class='va'>f1</span>, data <span class='op'>=</span> <span class='va'>palmetto_clean</span>, 
+                method <span class='op'>=</span> <span class='st'>"glm"</span>,
+                family <span class='op'>=</span> <span class='st'>"binomial"</span>,
+                trControl <span class='op'>=</span> <span class='va'>tr_ctrl</span><span class='op'>)</span>
+
+<span class='co'># accuracy = 0.917</span>
+
+<span class='co'># Train model 2</span>
+<span class='va'>model2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/caret/man/train.html'>train</a></span><span class='op'>(</span><span class='va'>f2</span>, data <span class='op'>=</span> <span class='va'>palmetto_clean</span>, 
+                method <span class='op'>=</span> <span class='st'>"glm"</span>,
+                family <span class='op'>=</span> <span class='st'>"binomial"</span>,
+                trControl <span class='op'>=</span> <span class='va'>tr_ctrl</span><span class='op'>)</span>
+
+<span class='co'># accuracy = 0.899</span>
+</code></pre>
+</div>
+</details>
+</div>
+<p><strong>Model selection results</strong> <em>Model 1</em> used the following predictor variables: plant height, canopy length, canopy width, and green leaf counts and had an accuracy of 91.7% in the 10-fold cross validation with an AICc = 5194.57. Contrastingly, <em>model 2</em> used the following predictor variables: plant height, canopy width, and green leaf counts and had an accuracy of 89.9% in the 10-fold cross validation with an AICc = 5987.48. Based on the AICc values and the predicted accuracy of these two models, this analysis concludes that model 1 is superior.</p>
+<h2 id="blr-model-results">BLR model results</h2>
+<p><strong>Table 1:</strong> Summarized results of BLR for model 1 with <em>sabal etonia</em> as the reference species.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># train the selected model using the entire data set and format data for table</span>
+<span class='va'>blr1_tidy</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://generics.r-lib.org/reference/tidy.html'>tidy</a></span><span class='op'>(</span><span class='va'>blr1</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='va'>statistic</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>p.value <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span><span class='va'>p.value</span> <span class='op'>&lt;</span> <span class='fl'>0.001</span> <span class='op'>~</span> <span class='st'>"&lt;0.001"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>term <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span><span class='va'>term</span> <span class='op'>==</span> <span class='st'>"(Intercept)"</span> <span class='op'>~</span> <span class='st'>"Intercept"</span>,
+                          <span class='va'>term</span> <span class='op'>==</span> <span class='st'>"height"</span> <span class='op'>~</span> <span class='st'>"Height"</span>,
+                          <span class='va'>term</span> <span class='op'>==</span> <span class='st'>"length"</span> <span class='op'>~</span> <span class='st'>"Length"</span>,
+                          <span class='va'>term</span> <span class='op'>==</span> <span class='st'>"width"</span> <span class='op'>~</span> <span class='st'>"Width"</span>,
+                          <span class='va'>term</span> <span class='op'>==</span> <span class='st'>"green_lvs"</span> <span class='op'>~</span> <span class='st'>"Green leaf counts"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='co'># create a finalized table for presentation</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/knitr/man/kable.html'>kable</a></span><span class='op'>(</span><span class='va'>blr1_tidy</span>,
+        col.names <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Variable"</span>, <span class='st'>"Coefficient"</span>, <span class='st'>"Standard Error"</span>, <span class='st'>"P Value"</span><span class='op'>)</span>,
+        align <span class='op'>=</span> <span class='st'>'c'</span>,
+        digits <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/kableExtra/man/kable_classic.html'>kable_paper</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+Variable
+</th>
+<th style="text-align:center;">
+Coefficient
+</th>
+<th style="text-align:center;">
+Standard Error
+</th>
+<th style="text-align:center;">
+P Value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+Intercept
+</td>
+<td style="text-align:center;">
+-3.227
+</td>
+<td style="text-align:center;">
+0.142
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Height
+</td>
+<td style="text-align:center;">
+0.029
+</td>
+<td style="text-align:center;">
+0.002
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Length
+</td>
+<td style="text-align:center;">
+-0.046
+</td>
+<td style="text-align:center;">
+0.002
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Width
+</td>
+<td style="text-align:center;">
+-0.039
+</td>
+<td style="text-align:center;">
+0.002
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Green leaf counts
+</td>
+<td style="text-align:center;">
+1.908
+</td>
+<td style="text-align:center;">
+0.039
+</td>
+<td style="text-align:center;">
+&lt;0.001
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="model-success">Model success</h3>
+<p><strong>Table 2:</strong> Summarized results of the success of model 1 at accurately predicting palmetto species once trained and applied to the full data set.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># use broom::augment to add predicted species to data set</span>
+<span class='va'>blr1_predicted</span> <span class='op'>=</span> <span class='va'>blr1</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'>broom</span><span class='fu'>::</span><span class='fu'><a href='https://generics.r-lib.org/reference/augment.html'>augment</a></span><span class='op'>(</span>type.predict <span class='op'>=</span> <span class='st'>"response"</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span><span class='st'>"predicted_classification"</span> <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span><span class='va'>.fitted</span> <span class='op'>&lt;</span> <span class='fl'>.5</span> <span class='op'>~</span> <span class='st'>"Sabal etonia"</span>,
+                               <span class='va'>.fitted</span> <span class='op'>&gt;</span> <span class='fl'>.5</span> <span class='op'>~</span> <span class='st'>"Serenoa repens"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span><span class='st'>"accurate_classification"</span> <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span><span class='va'>species_name</span> <span class='op'>==</span> <span class='va'>predicted_classification</span> <span class='op'>~</span> <span class='st'>"Yes"</span>,
+                                        <span class='va'>species_name</span> <span class='op'>!=</span> <span class='va'>predicted_classification</span> <span class='op'>~</span> <span class='st'>"No"</span> <span class='op'>)</span><span class='op'>)</span>
+
+<span class='co'># Create a table of prediction accuracy </span>
+
+<span class='va'>prediction_acc_table</span> <span class='op'>=</span> <span class='va'>blr1_predicted</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/janitor/man/tabyl.html'>tabyl</a></span><span class='op'>(</span><span class='va'>species_name</span>, <span class='va'>accurate_classification</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/janitor/man/adorn_percentages.html'>adorn_percentages</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/janitor/man/adorn_pct_formatting.html'>adorn_pct_formatting</a></span><span class='op'>(</span>digits <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/janitor/man/adorn_ns.html'>adorn_ns</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>species_name</span>, <span class='va'>Yes</span>, <span class='va'>No</span><span class='op'>)</span> <span class='co'># rename and order my column titles for presentation purposes</span>
+
+
+<span class='co'># finalize table for presentation</span>
+
+<span class='fu'><a href='https://rdrr.io/pkg/knitr/man/kable.html'>kable</a></span><span class='op'>(</span><span class='va'>prediction_acc_table</span>, 
+      col.names <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Palmetto Species"</span>, 
+                    <span class='st'>"Correct"</span>, 
+                    <span class='st'>"Incorrect"</span><span class='op'>)</span>,
+      align <span class='op'>=</span> <span class='st'>"c"</span>,<span class='op'>)</span> <span class='op'><a href='https://ggobi.github.io/ggally/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/pkg/kableExtra/man/kable_classic.html'>kable_paper</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+Palmetto Species
+</th>
+<th style="text-align:center;">
+Correct
+</th>
+<th style="text-align:center;">
+Incorrect
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+Sabal etonia
+</td>
+<td style="text-align:center;">
+92.6% (5701)
+</td>
+<td style="text-align:center;">
+7.4% (454)
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Serenoa repens
+</td>
+<td style="text-align:center;">
+90.8% (5548)
+</td>
+<td style="text-align:center;">
+9.2% (564)
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The selected model correctly predicted <em>Sabal etonia</em> with a 92.6% accuracy and <em>Serenoa repens</em> with a 90.8% accuracy. Overall, the model accurately classified 11,249 of 12,267 total observations based on plant height(cm), canopy width(cm), canopy length(cm) and green leaf counts.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
