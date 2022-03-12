@@ -2,7 +2,6 @@
 title: "Mono Lake Water Levels"
 description: |
   A visual history
-image: "Mono Lake.png"
 author:
   - name: Allison Gracer
 date:
