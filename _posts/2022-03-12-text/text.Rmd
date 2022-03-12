@@ -1,23 +1,138 @@
 ---
-title: "text"
+title: "Text and Sentiment Analysis"
 description: |
-  A short description of the post.
+  *Silent Spring* by Rachel Carson
 author:
   - name: Allison Gracer
     url: {}
-date: 2022-03-12
+date: 
 output:
   distill::distill_article:
     self_contained: false
+    code_folding: hide
 ---
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, include=FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+
+# attach packages
+
+library(tidyverse)
+library(tidytext)
+library(textdata)
+library(pdftools)
+library(ggwordcloud)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+## Overview
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+Rachel Carson wrote and published *Silent Spring* in 1962. The major theme in *Silent Spring* is the powerful and often negative effects that humans have on the natural world. She argues that the widespread use of pesticides has detrimental effects on the environment as well as human health. While *Silent Spring* was considered controversial and unscientific by many in that time, it has proven to be one of the most popular environmental books ever written. 
+
+
+“Those who contemplate the beauty of the earth find reserves of strength that will endure as long as life lasts. There is something infinitely healing in the repeated refrains of nature — the assurance that dawn comes after night, and spring after winter.” -Rachel Carson *Silent Spring* 1962
+
+**Data Citation:** United Diversity Coop. *Silent Spring* by Rachel Carson 1962. https://library.uniteddiversity.coop/More_Books_and_Reports/Silent_Spring-Rachel_Carson-1962.pdf
+
+### Most Frequently Used Words
+
+```{r}
+# read in with the pdf_text function from pdf tools
+
+ss_text <- pdf_text(here::here("data", "Silent_Spring.pdf"))
+
+# convert pdf of text into a data frame
+
+ss_lines <- data.frame(ss_text) %>% #one big character string
+  mutate(page = 1:n()) %>% # start with page one to end of text, add column of page numbers
+  mutate(full_text = str_split(ss_text, pattern = '\\n')) %>% 
+  unnest(full_text) %>% #take this full vector and split it apart
+  mutate(full_text = str_trim(full_text)) %>% 
+  slice(-(1:231)) # remove the acknowledgements and forward 
+
+# tokenize text by individual words
+
+ss_words <- ss_lines %>% 
+  unnest_tokens(word, full_text, token = 'words') %>% 
+  select(-ss_text)
+
+# remove stop words
+
+ss_words_clean <- ss_words %>% 
+  anti_join(stop_words, by = 'word')
+
+# count how many times a word appears throughout this book
+
+ss_wordcount <- ss_words_clean %>% 
+  count(word)
+
+# wrangle data to identify the 100 most frequently used words in the text, in descending order
+
+ss_top100 <- ss_wordcount %>% 
+  arrange(-n) %>% # arrange in descending order
+  slice(1:100) #slice and keep only rows 1-100
+
+```
+
+#### Word Cloud
+
+```{r}
+# create a wordcloud to visualize the top 100 words
+
+ggplot(data = ss_top100, aes(label = word)) +
+  geom_text_wordcloud(aes(color = n, size = n), shape = "diamond") +
+  scale_size_area(max_size = 6) + #reasonably similar word size for aesthetics
+  scale_color_gradientn(colors = c("deepskyblue4","chartreuse1","cyan1")) + #smooth transition of colors
+  theme_minimal()
+ 
+```
+
+**Figure1:** Word cloud visualization of the 100 most frequent words used in Rachel Carson's famous book *Silent Spring*, published in 1962. 
+
+We see unsurprisingly that the most common word used in *Silent Spring* is chemicals. This makes sense based on the topic of this book. Some of the other most frequently used words include control, spraying, DDT, insecticides, and species. 
+
+### Sentiment Analysis
+
+```{r}
+# bind silent spring data with NRC lexicon, which assigns words to sentiment bins
+
+ss_nrc <- ss_words_clean %>% 
+  inner_join(get_sentiments("nrc"))
+
+# find the count of words by sentiment bin
+
+ss_nrc_counts <- ss_nrc %>% 
+  count(sentiment)
+```
+
+#### NRC Lexicon
+
+```{r}
+# visualizing nrc sentiment data
+
+ggplot(data = ss_nrc_counts, aes(x = sentiment, 
+                                 y = n,
+                                 color = sentiment,
+                                 fill = sentiment)) +
+  geom_col() +
+  coord_flip() +
+  labs(x = "\nSentiment\n", y = "\nWord Count\n") +
+  scale_color_manual(values = c("darkolivegreen", "thistle4", "darkorange4", "darkslategray4", "lightsalmon4", "darkseagreen4", "coral4", "darkgoldenrod4", "yellow4", "turquoise4")) +
+  scale_fill_manual(values = c("darkolivegreen3", "thistle3", "darkorange3", "darkslategray3", "lightsalmon3", "darkseagreen3", "coral3", "darkgoldenrod3", "yellow3", "turquoise")) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+ 
+
+```
+
+**Figure 2:** Sentiment analysis of words in *Silent Spring* using the NRC lexicon. 
+
+No specific trends are visible in this sentiment analysis. The highest sentiment bins are positive and negative, with slightly more negative words. The third most common sentiment identified in this book is fear. 
+
+
+**Citation for NRC lexicon**: Crowdsourcing a Word-Emotion Association Lexicon, Saif Mohammad and Peter Turney, Computational Intelligence, 29 (3), 436-465, 2013.
+
 
 
