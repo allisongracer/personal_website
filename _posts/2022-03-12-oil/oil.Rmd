@@ -1,0 +1,134 @@
+---
+title: "California Oil Spill Incidents"
+description: |
+  Visualizations using tmap
+author:
+  - name: Allison Gracer
+    url: {}
+date: 
+output:
+  distill::distill_article:
+    self_contained: false
+    code_folding: hide
+---
+
+
+
+```{r setup, include=FALSE, warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+#Attach packages
+
+library(tidyverse)
+library(here)
+library(janitor)
+library(tmap)
+library(sf)
+```
+
+## Overview
+
+This report uses data from the Office of Spill Prevention and Response (OSPR) Incident Tracking Database, a statewide oil spill tracking information system. The data are collected by OSPR Field Response Team members for Marine oil spills and by OSPR Inland Pollution Coordinators and Wardens for Inland incidents.This data set includes oil spill incidents from 2008 (4 of 3,237 incidents in this data set occurred on 12/31/2007). This data is used to provide the Office of Spill Prevention and Response (OSPR) with quantified statistical evaluation and justification for public education programs, policy analysis, budgeting and training, and to analyze OSPRs overall preparedness and response performance.  
+
+
+**Data Citation:** California Department of Fish and Wildlife (CDFW); Office of Spill Prevention and Response (OSPR). 2020. Oil Spill Incident Tracking [ds394]. https://gis.data.ca.gov/datasets/7464e3d6f4924b50ad06e5a553d71086_0/explore?showTable=true
+
+
+
+```{r}
+# First, read in the California counties shapefile, then use clean_names() to set all names to lower snake case. Then simplify by only keeping two attributes: NAME (county name) and ALAND (land area), then renaming those to `county_name` and `land_area`.
+
+ca_counties_sf <- read_sf(here("data", "ca_counties", "CA_Counties_TIGER2016.shp")) %>% 
+  janitor::clean_names() %>%
+  select(county_name = name, land_area = aland)
+
+# Next, read in the CA oil spill data, then use clean_names() to set all names to lower snake case.
+
+ca_oil_spills <- read_sf(here("data", "Oil_Spill_Incident_Tracking_[ds394]", "Oil_Spill_Incident_Tracking_[ds394].shp")) %>% 
+  clean_names()
+```
+
+## Visualizations
+
+This report includes two maps. One interactive map that shows individual incidents of oil spills throughout the state of California (marine and inland). The second is a static map that shows the density of inland oil spill incidents by county. In this data set, an "incident" is "a discharge or threatened discharge of petroleum or other deleterious material into the waters of the state."
+
+
+```{r}
+# We need to ensure that the coordinate reference system (CRS) from the California counties and for the California oil spills match. 
+
+# Check CRS for ca_counties_sf
+##ca_counties_sf %>% st_crs()
+
+# Check CRS for ca_oil_spills
+##ca_oil_spills %>%  st_crs()
+
+# Set CRS for oil spills to be the same as ca_counties_sf
+ca_oil_spills_4326_sf <- st_transform(ca_oil_spills, st_crs(ca_counties_sf))
+
+# Then check it:
+##ca_oil_spills_4326_sf %>%  st_crs()
+
+```
+
+### Interactive Map of Oil Spill Incidents in California
+
+```{r}
+# Now that they have the same CRS, run a test plot of the two together
+
+#ggplot() +
+  #geom_sf(data = ca_counties_sf) +
+  #geom_sf(data = ca_oil_spills_4326_sf, size = 1, color = "red")
+
+# They appear to be working together
+
+# Create an exploratory interactive map in tmap showing the location of oil spill events included in the data
+
+# Set the viewing mode to "interactive":
+tmap_mode(mode = "view")
+
+# Create and customize my interactive tmap with the polygon fill color updated by variable 'land_area', updating the color palette to "BuGn", then add another shape layer for the oil spill records (added as dots):
+tm_shape(ca_counties_sf) +
+  tm_fill("land_area", palette = "BuGn", title = "Land Area (meters squared)") +
+  tm_shape(ca_oil_spills_4326_sf) +
+  tm_dots()
+```
+
+**Figure 1:** This map is interactive and shows the location of oil spills in California, broken down by county. Each dot on the map indicates a single oil spill incident. 
+
+This map shows that the majority of spills (marine and inland) occur on coastal counties in the state of California. 
+
+### Density Map of Inland Oil Spills by California County
+
+```{r}
+# Create a finalized static choropleth map showing counts of inland oil spill events by county
+
+# Join the data into one combined data frame 
+
+ca_count_sf <- ca_counties_sf %>% 
+  st_join(ca_oil_spills_4326_sf)
+
+# View the head of my combined data frame
+##head(ca_count_sf)
+
+# Find counts from combined data frame
+oilspill_counts_sf <- ca_count_sf %>% 
+  group_by(county_name) %>% 
+  summarize(spill_count = sum(!is.na(dfgcontrol)))
+
+# View the head
+##head(oilspill_counts_sf)
+
+# Create the map
+ggplot(data = oilspill_counts_sf) +
+  geom_sf(aes(fill = spill_count), color = "white", size = 0.1) +
+  scale_fill_gradientn(colors = c("lightgray", "orange", "red")) +
+  theme_minimal() +
+  labs(fill = "Number of Spills")
+```
+
+**Figure 2:** This static map shows the density of inland oil spills by county. The darker the color fill of the county, the higher number of oil spill incidents. 
+
+This map shows the highest density of inland oil spills in 2008 occurred in Los Angeles county, then by San Diego county, followed by three counties in the bay area: Contra Costa, San Mateo, and Alameda.
+
+
+

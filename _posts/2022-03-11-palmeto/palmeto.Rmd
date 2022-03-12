@@ -3,6 +3,7 @@ title: "Binary Logistic Regression on Palmetto Species"
 description: 
 author:
   - name: Allison Gracer
+    url: {}
 date: 
 output:
   distill::distill_article:
