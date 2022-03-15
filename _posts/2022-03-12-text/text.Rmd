@@ -1,7 +1,7 @@
 ---
 title: "Text and Sentiment Analysis"
 description: |
-  *Silent Spring* by Rachel Carson
+  Silent Spring by Rachel Carson
 author:
   - name: Allison Gracer
     url: {}
