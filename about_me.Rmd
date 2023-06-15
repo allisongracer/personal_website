@@ -12,9 +12,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Master of Environmental Science & Management** Bren School of Environmental Science & Management (Expected June 2023) 
 
+- Energy & Climate Specialization
+
 - Corporate Environmental Management Specialization
 
-- Energy & Climate Specialization
+- Innovation Focus
+
+*Highlighted Coursework:* Financial Management & Environmental Accounting, Energy Demand, Environmental Business, Environmental Economics, Environmental Policy, Data Analysis, Advanced Data Analysis
 
 
 **B.A. with Honors in Environmental Studies & Anthropology** University of California, Santa Barbara (June 2013)
@@ -26,48 +30,50 @@ knitr::opts_chunk$set(echo = TRUE)
 - Senior Honors Thesis: Paleoethnobotanical Analysis of Farming and Food Systems in Central Illinois
 
 
-## Research Experience
+## Renewable Energy Procurement & ESG Experience
 
-**Senior Honors Research Program:** Dr. Amber VanDerwarker, Anthropology UCSB 6/12-12/13
+**Project Manager – Client: Paramount Global; Master’s Group Project** Santa Barbara, CA (3/22- Present) *A Corporate Renewable Energy Procurement Strategy*
 
-- Explored the impacts of chronic warfare on maize production in the ancient Central Illinois River Valley
+- Conducted in-depth analysis of energy consumption and Scope 2 emissions for Paramount's 300+ U.S.       facilities, leveraging data insights to identify priority facilities for procuring renewable energy
 
-- Assessed the numbers and types of maize varieties using paleoethnobotanical remains
+- Modeled Scope 2 emissions reductions using on-site solar, PPA, and VPPA financing structures to         evaluate potential monetary costs, benefits, and risks of renewable energy procurement
 
+- Led a team of 6 professionals in project management, facilitating regular team meetings, collaborating   on project tasks, and providing direction throughout the project, from initial work plan development    to final deliverables
 
-**Forest Garden Research Assistant:** Dr. Anabel Ford, Director of MesoAmerican Research Center 3/12-6/12	
+**ESG Strategy Intern – Paramount Global** Remote Position (6/22-8/22)
 
-- Analyzed sustainable food production practices implemented in Central America
+- Conducted internal stakeholder interviews to assess ESG performance and identify areas for              improvement, and provided recommendations to management based on findings
 
-- Collected and review relevant material & create summarized reports of findings
+- Reported ESG trends and best practices from Sustainable Production Alliance (SPA) meetings to the       Paramount Global team
 
-
-**Agricultural Food System Research Assistant:** Dr. David Cleveland, Environmental Studies UCSB 12/10-6/12 
-
-- Examined synergistic potentials for food system across numerous sources 
-
-- Interviewed farmers and policy advocates throughout Santa Barbara County
+- Facilitated high-level meetings with C-suite and steering committee to discuss ESG strategies using     prepared slide deck presentation materials
 
 
-**Wildlands Studies Field School:** Belize – Ecosystems & Cultures 6/11-8/11
+## Management and Communication Experience
 
-- Assessed the effectiveness of long-range sustainability of resource management strategies in Belize’s natural areas
+**Lead Teaching Assistant – Environmental Studies Department UCSB** Santa Barbara, CA (9/21-Present)
 
-- Conducted ecological research and monitoring across Belize’s key terrestrial and coastal ecosystems
+- Supervised a team of 8 teaching assistants in developing course materials and leading class             discussions
 
+- Facilitated weekly meetings to review course progress and provide feedback on teaching strategies
 
-**Greenhouse Intern:** Goleta Valley Beautiful 12/10-6/11			
-
-- Developed on-site composting, trained employees, and created a manual
-
-- Composed reports, develop and conduct workshops and science night outreach at elementary schools
+- Collaborated with the course instructor to create and revise course syllabi, assignments, and exams,    resulting in improved student learning outcomes and increased course satisfaction ratings
 
 
-**Floral Reproductive Ecology Lab Research Assistant:** Leah Dudley & Susan Mazer, Faculty UCSB 10/09-3/10
+**Assistant Manager of Operations – SurePrep LLC** Irvine, CA (1/17–9/21)
 
-- Methodical record keeping of plant traits, data collection, data entry, and statistical analysis
+- Drove productivity and accuracy of tax data entry and verification operations by closely monitoring     productivity reports and implementing corrective actions to ensure service standards and output goals   were consistently met
 
-- Plant care including self-pollination, cross pollination, planting
+- Spearheaded the successful recruitment, onboarding, training, and evaluation of 400+ temporary          employees hired each tax season, resulting in a significant increase in both the quantity and quality   of production
+
+- Developed onboarding and training materials, equipping new hires with the necessary knowledge and       skills to excel and improve performance
+
+
+**Skills, Certifications, & Activities**
+
+**Computer:** Microsoft Office (Excel, Word, PowerPoint), RStudio, GitHub, Canva
+**Presentations:** Bren Public Thesis Presentation – 100+ person audience, Society of Ethnobiology Conference – 300+ person audience, American Anthropological Association – poster presentation
+**Certifications:** GHG Accounting – Greenhouse Gas Institute
 
 
 
